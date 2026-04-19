@@ -237,11 +237,14 @@ Bundle MCP servers inside a plugin `.mcp.json` so the team gets them automatical
 
 ---
 
-## Example: AWS MCP Servers (user scope)
+## Recommended Team MCP Servers
 
-Install the full AWS toolkit globally so it's available in every project. Use `--scope user` and `--` to separate Claude's flags from the `uvx` command:
+Install these globally with `--scope user` so they're available in every project. Use `--` to separate Claude's flags from `uvx` commands:
 
 ```bash
+# Context7 (up-to-date docs for LLMs and AI code editors)
+claude mcp add --transport http --scope user context7 https://mcp.context7.com/mcp
+
 # Atlassian Rovo (Jira & Confluence)
 claude mcp add --transport http --scope user atlassian https://mcp.atlassian.com/v1/mcp
 
